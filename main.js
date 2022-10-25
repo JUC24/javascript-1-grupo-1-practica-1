@@ -30,6 +30,23 @@ const word = []
 cuente e imprima la cantidad de ceros totales en dicha matriz. Debe utilizar
 ciclos for */
 
+const matriz = [[1,0,0], [0,1,1],[0,1,0]]
+let contador = []
+
+function ceros (matriz){
+  for (var i; i < matriz.length; i++){
+    contador = 0
+    for (var j; j < matriz[i]; j++){
+      if (matriz[i] = 0){
+        contador.push(contador)
+      }
+    }
+    console.log (contador)
+  }
+}
+
+
+
 
 /** 4. Cree un programa que reciba un array de números, verifique cuáles números
 están repetidos y retorne un array con dichos números (los que estan
@@ -59,7 +76,7 @@ problema. */
 
 const dimension = 12;
 
-function triangulo (){
+function triangulo (dimension){
   for (let i; i < dimension; i++){
     let linea = '';
     for (let cont = 0; cont <= i; cont++){
@@ -69,13 +86,12 @@ function triangulo (){
   }
 }
 
-
-
-
-function main (){
+function main(){
   numeromayor(array)
   numduplex(temporalArray)
-  triangulo ()
+  triangulo (dimension)
+  ceros (matriz)
 }
 
-main ()
+main()
+
