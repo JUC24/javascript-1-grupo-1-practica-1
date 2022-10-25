@@ -20,12 +20,6 @@ dicha palabra es palíndromo, es decir, la palabra se lee igual de izquierda a
 derecha o de derecha a izquierda, o no. Para la resolución de dicho problema
 debe utilizar ciclo for*/
 
-const word = []
-
-
-
-
-
 /** 3. Dada la siguiente matriz [ [1,0,0], [0,1,1], [0,1,0] ], haga un programa que
 cuente e imprima la cantidad de ceros totales en dicha matriz. Debe utilizar
 ciclos for */
@@ -41,12 +35,9 @@ function ceros (matriz){
         contador.push(contador)
       }
     }
-    console.log (contador)
+    console.log (contador[i])
   }
 }
-
-
-
 
 /** 4. Cree un programa que reciba un array de números, verifique cuáles números
 están repetidos y retorne un array con dichos números (los que estan
