@@ -40,4 +40,4 @@ function parImpar (numero) {
   }
 }
 
-console.log (parImpar (4));
+console.log (parImpar (100));
