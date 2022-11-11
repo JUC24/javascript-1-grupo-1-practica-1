@@ -14,25 +14,28 @@ agregará al array.
 
  */
 
-let valores = [5,1,65,115,75];
-let min = [0];
-let max = [0];
+let valores = [];
+let min = 0;
+let max = 0;
 let flag = true
 let inc = 0
 
-while(flag){
-  let numeros = prompt("Digite un valor, cuando no desee ingresar mas numeros precione cuanquier otra letra: ");
-  if(numeros === Number){
-    valores.push(numeros);
-  }else if (numeros === ''){
-    break;
+function datos(){
+  while(flag){
+    let numeros = prompt("Digite un valor, cuando no desee ingresar mas numeros precione cuanquier otra letra: ");
+    if(numeros === ''){
+      break;;
+    }else{
+      valores.push(Number(numeros));
+    }
+    inc++
+    console.log(valores);
   }
-  inc++
-  console.log(valores);
 }
 
 
 function mayorMenor (valores){
+  min = valores[0];
   for (let i = 0; i < valores.length; i++){
     if (min > valores[i]){
       min = valores[i];
@@ -63,6 +66,7 @@ function mediana(valores) {
 
 
 function main(){
+  datos()
   mayorMenor(valores);
   console.log(promedio(valores));
   mediana(valores);
