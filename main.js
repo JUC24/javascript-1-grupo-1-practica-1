@@ -17,19 +17,26 @@ soluciones (cuando b ac 0 ) y notificarlo al usuario.
 /*
 Ejercicio 3: Escriba un programa que imprima todos los números del 1 al 100, uno por línea.
 */
-console.log("Lista Números del 1 - 100")
-for(var i = 0; i <= 100; i++){
-  console.log(i);
-}
 
+function ej3(){
+  document.write("Lista Números del 1 - 100")
+  document.write("<br>")
+  for(var i = 1; i <= 100; i++){
+    document.write(i.toString() + "<br>");
+  }
+}
 
 /*
 Ejercicio 4: Modifique el programa anterior para que sólo imprima los números pares.
 */
-console.log("Lista Números pares")
-for(var i = 0; i <= 100; i++){
-  if(i % 2 === 0){
-    console.log(i)
+
+function ej4(){
+  document.write("Lista Números pares")
+  document.write("<br>")
+  for(var i = 1; i <= 100; i++){
+    if(i % 2 === 0){
+      document.write(i.toString() + "<br>");
+    }
   }
 }
 
@@ -38,3 +45,26 @@ Ejercicio 5: Modifique el programa del ejercicio 4 para que imprima 10 números 
 un espacio. La primera línea tendrá los números del 1 al 10, la segunda del 11 al 20,
 la tercera del 21 al 30 y así hasta llegar a 100.
 */
+
+function ej5(){
+  document.write("Lista Números del 1 - 100")
+  document.write("<br>")
+  let e = 1;
+  for(var i = 1; i <= 100; i++){
+      document.write(i.toString() + " ")
+      if (e == 10) {
+          document.write("<br>")
+          e = 1;
+      }
+      e++;
+  }
+}
+
+
+function main (){
+  ej3()
+  ej4()
+  ej5();
+}
+
+main ()
