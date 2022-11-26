@@ -8,7 +8,7 @@ let num = prompt("Ingrese un valor: ")
 let a = prompt("Ingrese un valor numerico a: ")
 let b = prompt("Ingrese un valor numerico b: ")
 let c = prompt("Ingrese un valor numerico c: ")
-discriminante = ((b**2) - 4*(a*c));
+let discriminante = ((b**2) - 4*(a*c));
 
 function ej1(num){ 
     if (num == 0 || num == 1 || num == 4){
@@ -32,6 +32,22 @@ Además, debe detectarse el caso en el que la ecuación no tiene
 soluciones (cuando b ac 0 ) y notificarlo al usuario.
 */
 
+function ej2 (a,b,c){
+  let resultado1 = x1(a,b,);
+  let resultado2 = x2(a,b,);
+  if(discriminante < 0){
+    discriminante = - discriminante;
+    document.write("No hay soluciones reales" + "<br>");
+  }
+  if(a != 0){
+    x1(a,b)
+    x2(a,b)
+  }
+  document.write("Dis = " + discriminante + "<br>")
+  document.write("x1 = " + resultado1 + "<br>")
+  document.write("x2 = " + resultado2 + "<br>")
+}
+
 function x1(a,b){
   return (-b + Math.sqrt(discriminante)) / 2*a;
 }
@@ -39,20 +55,6 @@ function x1(a,b){
 function x2(a,b){
   return (-b - Math.sqrt(discriminante)) / 2*a
 } 
-
-function ej2 (){
-  let resultado1 = x1(a,b,);
-  let resultado2 = x2(a,b,);
-  if(discriminante < 0){
-    discriminante = - discriminante;
-    document.write("No hay soluciones reales" + "<br>");
-  }else if(a != 0){
-    x1(a,b)
-    x2(a,b)
-  }
-  document.write("x1 = " + resultado1 + "<br>")
-  document.write("x2 = " + resultado2 + "<br>")
-}
 
 /*
 Ejercicio 3: Escriba un programa que imprima todos los números del 1 al 100, uno por línea.
@@ -100,7 +102,7 @@ function ej5(){
 
 function main (){
   ej1(num)
-  ej2()
+  ej2(a,b,c)
   ej3()
   ej4()
   ej5();
