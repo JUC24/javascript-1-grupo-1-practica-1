@@ -17,8 +17,8 @@ caracteres, formado por 2 triángulos, uno con el carácter '#' y el otro con el
 function printSquare (){
   for(let i = 0; i <= 10; i++) {
     let resultado = ' ';
-    for(let x = 0; x <= 10; x++){
-      if (i >= x ){
+    for(let j = 0; j <= 10; j++){
+      if (i <= j ){
         resultado += "#";
       } else {
         resultado += "*";
