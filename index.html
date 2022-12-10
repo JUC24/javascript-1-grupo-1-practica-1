@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <form class="form" id="calculadora" action="">
+    <label for="digito1">Digito 1
+      <input class="entrada1" type="number" id="digito1" name="space1" autofocus placeholder="Ingrese un valor">
+    </label>
+  
+    <label for="digito2">Digito 2
+      <input class="entrada2" type="number" id="digito2" name="space2" autofocus placeholder="Ingrese un valor">
+    </label>
+
+    <button type="button" onclick="sumar();">+</button>
+    <button type="button" onclick="Restar();">-</button>
+    <button type="button" onclick="multiplicar();">x</button>
+    <button type="button" onclick="division();">/</button>
+    <button onclick="limpiar();">Reset</button>
+  </form>
+  <br>
+  <br>
+  <div class="result" style="border: 1px solid; width: 200px;"> El resultado es: <span id="resultado"></span></div>
+</body>
+
+<script src="calculadora.js"></script>
+</html>
